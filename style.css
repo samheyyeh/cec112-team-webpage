@@ -87,8 +87,8 @@ th{
 background:#d9e8f7;
 }
 
-/* Highlight row */
-.highlight{
+/* Highlight the max-power gear ratio row */
+.highlight td{
 background-color:yellow;
 font-weight:bold;
 }
