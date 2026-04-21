@@ -3,45 +3,28 @@ scroll-behavior:smooth;
 }
 
 body{
-
 font-family: Arial, Helvetica, sans-serif;
-
 margin:0;
-
 background:#f4f7fb;
-
 color:#1f2d3d;
-
 }
 
-
 header{
-
 background:#003a70;
-
 color:white;
-
 text-align:center;
-
 padding:60px 20px;
-
 }
 
 .subtitle{
 opacity:0.85;
 }
 
-
 section{
-
 max-width:1100px;
-
 margin:auto;
-
 padding:60px 20px;
-
 }
-
 
 h1{
 margin:0;
@@ -49,153 +32,107 @@ font-size:42px;
 }
 
 h2{
-
 color:#003a70;
-
 margin-bottom:15px;
-
 }
 
 p{
 line-height:1.7;
 }
 
-
+/* FLEX ROW */
 .content{
-
 display:flex;
-
-align-items:center;
-
+align-items:flex-start; /* aligns top instead of center */
 gap:40px;
-
 }
 
-
+/* IMAGE */
 .content img{
-
 width:350px;
-
 border-radius:6px;
-
+border:3px solid #003a70;
 box-shadow:0 6px 18px rgba(0,0,0,0.15);
-
 }
 
-
+/* TEXT SIDE */
 .text{
 flex:1;
 }
 
-
 .caption{
-
 font-style:italic;
-
 opacity:0.7;
-
 margin-top:10px;
-
 }
 
-
+/* ===== TABLE FIX ===== */
 table{
-
 width:60%;
-
-margin:auto;
-
+margin-top:20px;
 border-collapse:collapse;
 
-margin-top:20px;
-
+/* KEY FIX */
+margin-left:0;     /* left align */
+margin-right:auto; /* prevents centering */
 }
-
 
 th,td{
-
 border:2px dashed #003a70;
-
 padding:12px;
-
 text-align:center;
-
 }
-
 
 th{
-
 background:#d9e8f7;
-
 }
 
-
-ul{
-
-line-height:1.8;
-
-}
-
-
-.links a{
-
-color:#0077b6;
-
-text-decoration:none;
-
+/* Highlight row */
+.highlight{
+background-color:yellow;
 font-weight:bold;
+}
 
+/* FULL WIDTH SECTION UNDER IMAGE */
+.full-width{
+margin-top:30px;
+width:100%;
+}
+
+/* LISTS */
+ul{
+line-height:1.8;
+}
+
+/* LINKS */
+.links a{
+color:#0077b6;
+text-decoration:none;
+font-weight:bold;
+font-family:inherit;
 }
 
 .links a:hover{
-
 text-decoration:underline;
-
 }
 
-
+/* FOOTER */
 footer{
-
 background:#003a70;
-
 color:white;
-
 text-align:center;
-
 padding:20px;
-
 margin-top:60px;
-
 }
-
 
 /* Scroll Animations */
-
 .fade{
-
 opacity:0;
-
 transform:translateY(40px);
-
 transition:all 1s ease;
-
 }
 
 .show{
-
 opacity:1;
-
 transform:translateY(0);
-
-}
-.content img{
-
-width:350px;
-
-border-radius:6px;
-
-border:3px solid #003a70;
-
-box-shadow:0 6px 18px rgba(0,0,0,0.15);
-
 }
